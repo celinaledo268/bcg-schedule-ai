@@ -1,0 +1,3 @@
+extends: base.yaml
+rl:
+  conformal_alpha: 0.05

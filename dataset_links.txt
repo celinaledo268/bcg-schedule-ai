@@ -1,0 +1,2 @@
+SEER Research Data Access	https://seer.cancer.gov/data/access.html	access controlled by NCI SEER Research Data Use Agreement	verified 2026-07-08
+TCGA-BLCA GDC Project	https://portal.gdc.cancer.gov/projects/TCGA-BLCA	NIH GDC open-access clinical and aggregated RNA-seq tier	verified 2026-07-08

@@ -1,0 +1,3 @@
+extends: base.yaml
+rl:
+  cql_alpha: 10.0

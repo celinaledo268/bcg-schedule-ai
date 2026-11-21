@@ -1,0 +1,41 @@
+seed: 1337
+mode: train
+paths:
+  registry_csv: data/processed/seer_patient_month.csv
+  tcga_csv: data/processed/tcga_blca_signature.csv
+  checkpoint_dir: checkpoints
+patient:
+  history_months: 24
+  horizon_months: 36
+  state_dim: 42
+model:
+  latent_dim: 32
+  transformer_width: 128
+  transformer_depth: 6
+  transformer_heads: 8
+  action_hidden: 256
+  cart_depth: 4
+rl:
+  action_count: 5
+  gamma: 0.95
+  cql_alpha: 5.0
+  conformal_alpha: 0.10
+  reward_rfs: 1.0
+  reward_ae: 0.30
+  reward_adherence: 0.20
+  equity_lambda: 20.0
+training:
+  batch_size: 256
+  grad_accum: 1
+  steps: 180000
+  lr: 0.0001
+  warmup_steps: 4000
+  weight_decay: 0.0001
+  target_update: 2000
+  grad_clip: 1.0
+  precision: fp32
+compute:
+  gpu: NVIDIA A100
+  gpu_count: 1
+  vram_gb: 40
+  wall_clock_hours: 14
